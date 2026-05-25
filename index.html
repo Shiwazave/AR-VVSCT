@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя AR Модель</title>
+    <!-- Подключение скрипта Google Model Viewer -->
+    <script type="module" src="https://googleapis.com"></script>
+    <style>
+        body { margin: 0; padding: 0; width: 100vw; height: 100vh; overflow: hidden; }
+        model-viewer { width: 100%; height: 100%; background-color: #f0f0f0; }
+    </style>
+</head>
+<body>
+
+    <!-- Компонент просмотра. Замените chair.glb и chair.usdz на имена ваших файлов -->
+    <model-viewer 
+        src="Choron.glb" 
+        ios-src="Choron.usdz"
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        camera-controls 
+        touch-action="pan-y"
+        alt="3D модель из Blender">
+    </model-viewer>
+
+</body>
+</html>
